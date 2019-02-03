@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D4093672205FD6F00F49990 /* ApiErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4093662205FD6F00F49990 /* ApiErrors.swift */; };
+		2D4093692207452100F49990 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4093682207452100F49990 /* ExerciseTableViewCell.swift */; };
+		2D40936C220757FD00F49990 /* DetailExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40936B220757FD00F49990 /* DetailExerciseViewController.swift */; };
+		2D40936E2207581700F49990 /* DetailExercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D40936D2207581700F49990 /* DetailExercise.storyboard */; };
+		2D4093712207650900F49990 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D4093732207650900F49990 /* Localizable.strings */; };
+		2D40937522076BCC00F49990 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D40937422076BCC00F49990 /* AlertView.swift */; };
+		2D745B152203094500D2837D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D745B142203094500D2837D /* AppDelegate.swift */; };
+		2D745B172203094500D2837D /* ExerciciesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D745B162203094500D2837D /* ExerciciesListViewController.swift */; };
+		2D745B1A2203094500D2837D /* Strings+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D745B192203094500D2837D /* Strings+Localized.swift */; };
+		2D745B1C2203094500D2837D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D745B1B2203094500D2837D /* BaseViewController.swift */; };
+		2D745B1E2203094500D2837D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D745B1D2203094500D2837D /* Constants.swift */; };
+		2D745B212203094500D2837D /* ExerciciesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D745B1F2203094500D2837D /* ExerciciesList.storyboard */; };
+		2D745B232203094700D2837D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D745B222203094700D2837D /* Assets.xcassets */; };
+		2D745B262203094700D2837D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D745B242203094700D2837D /* LaunchScreen.storyboard */; };
+		2D745B2F22030CC200D2837D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D745B2E22030CC200D2837D /* Exercise.swift */; };
+		2D745B3422031EFA00D2837D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D745B3322031EFA00D2837D /* Session.swift */; };
+		CAB89A194D92FD8A2DC4194D /* Pods_Gymondo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C8FF4BEA2DCC528AAA365 /* Pods_Gymondo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		222C8FF4BEA2DCC528AAA365 /* Pods_Gymondo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gymondo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4093662205FD6F00F49990 /* ApiErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrors.swift; sourceTree = "<group>"; };
+		2D4093682207452100F49990 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		2D40936B220757FD00F49990 /* DetailExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewController.swift; sourceTree = "<group>"; };
+		2D40936D2207581700F49990 /* DetailExercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailExercise.storyboard; sourceTree = "<group>"; };
+		2D4093722207650900F49990 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2D40937422076BCC00F49990 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		2D745B112203094500D2837D /* Gymondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D745B142203094500D2837D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D745B162203094500D2837D /* ExerciciesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciciesListViewController.swift; sourceTree = "<group>"; };
+		2D745B192203094500D2837D /* Strings+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Strings+Localized.swift"; path = "Utils/Strings+Localized.swift"; sourceTree = "<group>"; };
+		2D745B1B2203094500D2837D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Utils/BaseViewController.swift; sourceTree = "<group>"; };
+		2D745B1D2203094500D2837D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utils/Constants.swift; sourceTree = "<group>"; };
+		2D745B202203094500D2837D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ExerciciesList.storyboard; sourceTree = "<group>"; };
+		2D745B222203094700D2837D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D745B252203094700D2837D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D745B272203094700D2837D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D745B2E22030CC200D2837D /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		2D745B3322031EFA00D2837D /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		3A2E94409FBDEAAA920385A7 /* Pods-Gymondo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymondo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gymondo/Pods-Gymondo.release.xcconfig"; sourceTree = "<group>"; };
+		DC1F576C4664546ADDE65760 /* Pods-Gymondo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymondo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gymondo/Pods-Gymondo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D745B0E2203094500D2837D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB89A194D92FD8A2DC4194D /* Pods_Gymondo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D40936A220757C800F49990 /* 2.DetailExercise */ = {
+			isa = PBXGroup;
+			children = (
+				2D40936B220757FD00F49990 /* DetailExerciseViewController.swift */,
+				2D40936D2207581700F49990 /* DetailExercise.storyboard */,
+			);
+			name = 2.DetailExercise;
+			sourceTree = "<group>";
+		};
+		2D745B082203094500D2837D = {
+			isa = PBXGroup;
+			children = (
+				2D745B132203094500D2837D /* Gymondo */,
+				2D745B122203094500D2837D /* Products */,
+				C92139B09D78631953945C95 /* Pods */,
+				3A1E76B5DD1C5154108ABF18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D745B122203094500D2837D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D745B112203094500D2837D /* Gymondo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D745B132203094500D2837D /* Gymondo */ = {
+			isa = PBXGroup;
+			children = (
+				2D745B30220316E800D2837D /* UserStories */,
+				2D745B2D22030C8000D2837D /* Model */,
+				2D745B3222031EE200D2837D /* Network */,
+				2D745B182203094500D2837D /* Utils */,
+				2D745B142203094500D2837D /* AppDelegate.swift */,
+				2D745B222203094700D2837D /* Assets.xcassets */,
+				2D745B242203094700D2837D /* LaunchScreen.storyboard */,
+				2D745B272203094700D2837D /* Info.plist */,
+				2D4093732207650900F49990 /* Localizable.strings */,
+			);
+			path = Gymondo;
+			sourceTree = "<group>";
+		};
+		2D745B182203094500D2837D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D745B192203094500D2837D /* Strings+Localized.swift */,
+				2D745B1B2203094500D2837D /* BaseViewController.swift */,
+				2D745B1D2203094500D2837D /* Constants.swift */,
+				2D4093662205FD6F00F49990 /* ApiErrors.swift */,
+				2D40937422076BCC00F49990 /* AlertView.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		2D745B2D22030C8000D2837D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D745B2E22030CC200D2837D /* Exercise.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2D745B30220316E800D2837D /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				2D745B31220316F400D2837D /* 1.ExerciciesList */,
+				2D40936A220757C800F49990 /* 2.DetailExercise */,
+			);
+			name = UserStories;
+			sourceTree = "<group>";
+		};
+		2D745B31220316F400D2837D /* 1.ExerciciesList */ = {
+			isa = PBXGroup;
+			children = (
+				2D745B162203094500D2837D /* ExerciciesListViewController.swift */,
+				2D745B1F2203094500D2837D /* ExerciciesList.storyboard */,
+				2D4093682207452100F49990 /* ExerciseTableViewCell.swift */,
+			);
+			name = 1.ExerciciesList;
+			sourceTree = "<group>";
+		};
+		2D745B3222031EE200D2837D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2D745B3322031EFA00D2837D /* Session.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		3A1E76B5DD1C5154108ABF18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222C8FF4BEA2DCC528AAA365 /* Pods_Gymondo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C92139B09D78631953945C95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC1F576C4664546ADDE65760 /* Pods-Gymondo.debug.xcconfig */,
+				3A2E94409FBDEAAA920385A7 /* Pods-Gymondo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D745B102203094500D2837D /* Gymondo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D745B2A2203094700D2837D /* Build configuration list for PBXNativeTarget "Gymondo" */;
+			buildPhases = (
+				BBC69C7E2E47D19194A4F910 /* [CP] Check Pods Manifest.lock */,
+				2D745B0D2203094500D2837D /* Sources */,
+				2D745B0E2203094500D2837D /* Frameworks */,
+				2D745B0F2203094500D2837D /* Resources */,
+				BDCF2006A746F5E1A4E0E1E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gymondo;
+			productName = Gymondo;
+			productReference = 2D745B112203094500D2837D /* Gymondo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D745B092203094500D2837D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "David Miguel Martinez";
+				TargetAttributes = {
+					2D745B102203094500D2837D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2D745B0C2203094500D2837D /* Build configuration list for PBXProject "Gymondo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D745B082203094500D2837D;
+			productRefGroup = 2D745B122203094500D2837D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D745B102203094500D2837D /* Gymondo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D745B0F2203094500D2837D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D4093712207650900F49990 /* Localizable.strings in Resources */,
+				2D745B262203094700D2837D /* LaunchScreen.storyboard in Resources */,
+				2D745B232203094700D2837D /* Assets.xcassets in Resources */,
+				2D745B212203094500D2837D /* ExerciciesList.storyboard in Resources */,
+				2D40936E2207581700F49990 /* DetailExercise.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBC69C7E2E47D19194A4F910 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gymondo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDCF2006A746F5E1A4E0E1E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gymondo/Pods-Gymondo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gymondo/Pods-Gymondo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D745B0D2203094500D2837D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D745B3422031EFA00D2837D /* Session.swift in Sources */,
+				2D4093672205FD6F00F49990 /* ApiErrors.swift in Sources */,
+				2D745B1E2203094500D2837D /* Constants.swift in Sources */,
+				2D40937522076BCC00F49990 /* AlertView.swift in Sources */,
+				2D40936C220757FD00F49990 /* DetailExerciseViewController.swift in Sources */,
+				2D745B1A2203094500D2837D /* Strings+Localized.swift in Sources */,
+				2D745B1C2203094500D2837D /* BaseViewController.swift in Sources */,
+				2D745B2F22030CC200D2837D /* Exercise.swift in Sources */,
+				2D4093692207452100F49990 /* ExerciseTableViewCell.swift in Sources */,
+				2D745B172203094500D2837D /* ExerciciesListViewController.swift in Sources */,
+				2D745B152203094500D2837D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D4093732207650900F49990 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D4093722207650900F49990 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2D745B1F2203094500D2837D /* ExerciciesList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D745B202203094500D2837D /* Base */,
+			);
+			name = ExerciciesList.storyboard;
+			sourceTree = "<group>";
+		};
+		2D745B242203094700D2837D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D745B252203094700D2837D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D745B282203094700D2837D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D745B292203094700D2837D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D745B2B2203094700D2837D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1F576C4664546ADDE65760 /* Pods-Gymondo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HNW88K277;
+				INFOPLIST_FILE = Gymondo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.david.Gymondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D745B2C2203094700D2837D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A2E94409FBDEAAA920385A7 /* Pods-Gymondo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HNW88K277;
+				INFOPLIST_FILE = Gymondo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.david.Gymondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D745B0C2203094500D2837D /* Build configuration list for PBXProject "Gymondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D745B282203094700D2837D /* Debug */,
+				2D745B292203094700D2837D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D745B2A2203094700D2837D /* Build configuration list for PBXNativeTarget "Gymondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D745B2B2203094700D2837D /* Debug */,
+				2D745B2C2203094700D2837D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D745B092203094500D2837D /* Project object */;
+}
